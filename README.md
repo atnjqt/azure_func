@@ -49,11 +49,11 @@ ________
 
 In Visual Studio Code you can open a new project, set it to [test-project](./test-project/) with my default `/usr/bin/python3` and it creates it's own virtual envirment...
 
---> Python code [HttpTrigger-testing/__init__.py](./testing-project/HttpTrigger-testing/__init__.py)
+--> Python code [HttpTrigger-testing/__init__.py](./test-project/HttpTrigger-testing/__init__.py)
 - this contains a simple function which checks if the url is SOLD OUT or not
 - Again this is just a quick example for using python code... This is based on the HTTP Trigger template
 
---> requirements [requirements.txt](./testing-project/requirements.txt)
+--> requirements [requirements.txt](./test-project/requirements.txt)
 - add any python pip installs to your req file if needed
 
 ``` diff
