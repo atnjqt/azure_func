@@ -64,6 +64,22 @@ azure-functions
 
 Once you run and deploy on your http://localhost:7071 and this is working as expected go ahead and deploy your endpoint to Azure Functions... You can then check the public facing endpoint. 
 
+### Deploying on Azure Portal to Live Environment
+
+On your Azure portal dashboard, start your Azure Function project.
+
+- The site is accessible at [https://bestbuy-soldout-checker.azurewebsites.net/api/httptrigger-testing](https://bestbuy-soldout-checker.azurewebsites.net/api/httptrigger-testing)
+
+*Do not forget to power down when not in use, to avoid charges...*s
+
+### Using Azure Functions in Data Science Projects...? 
+
+Use `curl` to get your site when live! 
+
+- Example here: [httpTrigger_result.ipynb](./httpTrigger_result.ipynb)
+
+_____________
+
 ## TODO
 
 -->> Better python code example than http trigger template
