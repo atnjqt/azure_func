@@ -9,7 +9,8 @@ This example uses my new & dedicated Azure Function endpoint on ASC UPenn Azure 
 This Azure Function App contains a project directory [etiennej-site/WhatTimeIsIt](./WhatTimeIsIt)
 - This example very simple sets our `HTTPResponse` value to include datetime.now() current time information.
 
-![](./img/app_vscode_screenshot.png)
+<img width='300' src='./img/app_vscode_screenshot.png'/> 
+
 
 ### Config Files for Azure Function Python HTTP:
 
