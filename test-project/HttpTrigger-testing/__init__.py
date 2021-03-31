@@ -1,8 +1,9 @@
 import logging
 import azure.functions as func
-## ETIENNE CODE BELOW FOR TESTING...
+
 from bs4 import BeautifulSoup
 import requests
+from datetime import datetime
 
 ############################
 ## USING A FUNCTION TO PASS URL & HEADERS
@@ -28,6 +29,8 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     'From': 'USER@asc.upenn.edu'  # This is another valid field
     }
 
+    current_time = datetime.now().strftime("%H:%M:%S %D")
+
     name = req.params.get('name')
     if not name:
         try:
@@ -42,6 +45,6 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     else:
 
         return func.HttpResponse(
-             "This Sample Azure HTTP triggered function executed successfully.\n\nPass a name in the query string or in the request body for a personalized response.\n\nURL:\n{}\n\n---> {}".format(url,check_if_sold_out(url,headers)),
+             "This Sample Azure HTTP triggered function executed successfully.\n\nPass a name in the query string or in the request body for a personalized response.\n\nCurrent Time: {} \n\nURL:\n{}\n\n---> {}".format(current_time,url,check_if_sold_out(url,headers)),
              status_code=200
         )
