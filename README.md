@@ -48,6 +48,9 @@ Each Azure Function project should have a directory in this repository, and each
 - Simple example created using Visual Studio Code: [etiennej-site](./etiennej-site)
     - I'll likely get rid of the original best buy and continue dev work inside of etiennej-site#
 
+- _**UPDATE -->**_ Custom Linux Container for R HTTP API endpoint [r-helloworld](./r-helloworld/)
+    - *Thinking about using this in conjunction w/ Qualtrics API ... TBD*
+
 
 ### Examples for using Azure Functions in Data Science Projects... ? 
 
@@ -59,8 +62,10 @@ __________
 
 ## TODO
 
--->> figure out odd time +4 hour dif for us-east-2 on whattimeisit functions
+- [ ] figure out odd time +4 hour dif for us-east-2 on whattimeisit functions
 
--->> docker container deployment of azure functions (does not support consumption model only premium)
+- [x] docker container deployment of azure functions (does not support consumption model only premium)
+
+- [ ] R function API query results for various BCRA exampledata columns
 
 ![](https://www.koskila.net/wp-content/uploads/2019/05/tenor.gif)
