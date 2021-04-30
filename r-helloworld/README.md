@@ -166,7 +166,7 @@ You can run the following, make sure to use the specific tag version number...
 ``` bash
 docker login
 
-docker push atnjqt/azurefunctionsimage:v1.3.1
+docker push atnjqt/azurefunctionsimage:v1.4.0
 ```
 
 Navigate to docker hub to confirm your image is pushed to your account: 
@@ -257,6 +257,24 @@ You can then pass query parameters, such as name, etc...
 - for an API call testing locally this works nicely, I think it's hard-coded in the example that it needs immediately after the URL `/api/HttpExample?name=YourNameHere&code=...`
 
 - https://r-helloworld-dev.azurewebsites.net/api/HttpExample?name=Etienne_Azure_Testing...&code=Vbl5n5NBSqFWObzJIbXgSKrro0RpeiEipEsIVaGgsADNvV84NtcI5w==
+
+
+### Enable Continuous Integration
+
+Run the following to enable CI and get your webhook
+
+```bash
+az functionapp deployment container config --enable-cd --query CI_CD_URL --output tsv --name r-helloworld-dev --resource-group asc-etienne-rg
+```
+
+- Navigate to Docker hub and associate this as a webhook for your repository. https://hub.docker.com/repository/docker/atnjqt/azurefunctionsimage/webhooks
+
+With the webhook set, Azure Functions redeploys your image whenever you update it in Docker Hub.
+
+Go ahead and rebuild your image 
+- how does tags work w/ CI? I think I specific earlier on ... 
+
+_______________
 
 
 ### *TODO --> Using Azure Function w/ Qualtrics for Common API Use Case*
