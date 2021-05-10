@@ -1,7 +1,7 @@
 # Azure Functions Examples
 
 Etienne P Jacquot - epj@asc.upenn.edu
-(03/30/2021)
+(05/09/2021)
 
 Simple examples for serverless computing using [Azure Functions](https://azure.microsoft.com/en-us/services/functions/) to run python code!
 
@@ -38,6 +38,14 @@ brew install azure-functions-core-tools@3
 brew link --overwrite azure-functions-core-tools@3
 ```
 ________
+
+## *UPDATE --> R & Python for BCRA in custom Linux Ubuntu Container*
+
+Example using `flask` and `rpy2` Python modules to bring the R package BCRA https://cran.r-project.org/web/packages/BCRA/index.html
+
+*Here is an example url --> http://0.0.0.0:5000/api/example_df?id=0&T1=40&T2=45&N_Biop=1&HypPlas=99&AgeMen=14&Age1st=24&N_Rels=1&Race=1*
+
+deployment dev in [flask-app](./flask-app)
 
 ## My Dev Projects & Functions:
 
