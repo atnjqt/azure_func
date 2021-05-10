@@ -39,15 +39,16 @@ brew link --overwrite azure-functions-core-tools@3
 ```
 ________
 
-## *UPDATE --> R & Python for BCRA in custom Linux Ubuntu Container*
+## *UPDATE 05/10/2021 --> R & Python for BCRA in custom Linux Ubuntu Container*
 
-Example using `flask` and `rpy2` Python modules to bring the R package BCRA https://cran.r-project.org/web/packages/BCRA/index.html
+Example using `flask` (DEV) / `azure_functions` (prod) and `rpy2` Python modules to bring the R package BCRA https://cran.r-project.org/web/packages/BCRA/index.html
 
-*Here is an example url --> http://0.0.0.0:5000/api/example_df?id=0&T1=40&T2=45&N_Biop=1&HypPlas=99&AgeMen=14&Age1st=24&N_Rels=1&Race=1*
+*Here is an example url (DEV) --> http://0.0.0.0:5000/api/example_df?id=0&T1=40&T2=45&N_Biop=1&HypPlas=99&AgeMen=14&Age1st=24&N_Rels=1&Race=1*
 
-deployment dev in [flask-app](./flask-app)
+- Deployment instructions for Azure Function in [bcra-app](./bcra-app)
 
-## My Dev Projects & Functions:
+
+## Dev Projects & Functions:
 
 Each Azure Function project should have a directory in this repository, and each respective project can have many different functions. For simplicity so far each project only has one function.
 

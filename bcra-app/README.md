@@ -1,8 +1,8 @@
-# Flask Python API Example
+# Python & R API Example (Flask & Azure Functions)
 
 Etienne P Jacquot - 05/10/2021
 
-This Python Flask app leverages the `ryp2` module to pass a pandas dataframe to the R module BCRA (more info [here](https://cran.r-project.org/web/packages/BCRA/index.html))
+This Python app leverages the `ryp2` module to pass a pandas dataframe to the R module BCRA (more info [here](https://cran.r-project.org/web/packages/BCRA/index.html))
 
 - For all configurations necessary for this workflow, please reference: https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-function-linux-custom-image?tabs=bash%2Cportal&pivots=programming-language-python
 
@@ -14,7 +14,7 @@ ___________
 Sample notebook here for testing --> [flask-app-testing.ipynb](./flask-app-testing.ipynb)
 
 
-- steps to launch our testing Python Flask app (this is ok, really we want a serverless deployment option)
+- My dev testing looked at Python Flask app, this is ok, really we want a serverless deployment option but this was really helpful to conceptualize the project
 
 ```
 cd app
@@ -102,12 +102,20 @@ ___________
 
 *I just setup a sample Qualtrics Survey **Web Servce** usecase and this works really nicely!!*
 
-
 _________
 
 
-## TODO...
+## TODO --> ...
 
-- [ ] To have multiple functions for various bcra operations, this is probably an additional directory like [HttpExample](./HttpExample) ...
-- [ ] qualtrics api use case to pass survey question values 
-- [ ] set up branching for repo, or private bitbucket repository
+This represents great progress but still a lot to go ...
+
+- [ ] To have *multiple functions* for various bcra operations, this is probably an additional directory like [HttpExample](./HttpExample) ...
+
+- [ ] Review *Qualtrics api* use case to pass survey question values, piped values ...
+
+- [ ] set up *branching* for repo, or private bitbucket repository
+
+- [ ] enable *CICD* for this development project so qualtrics survey always gets latest api endpoint results
+
+- [ ] look at *azure resource consumption* for estimates over lifecycle of decide2screen project 
+- [ ] demo presentation for this work w/ emphasis on serverless computing + qualtrics survey -- *dev for best of both worlds*
