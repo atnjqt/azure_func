@@ -47,6 +47,8 @@ Example using `flask` (DEV) / `azure_functions` (prod) and `rpy2` Python modules
 
 - Deployment instructions for Azure Function in [bcra-app](./bcra-app)
 
+![](https://bluestockingsmagazine.files.wordpress.com/2013/10/breat-gif.gif)
+
 
 ## Dev Projects & Functions:
 
