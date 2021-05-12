@@ -38,9 +38,12 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
                 T1 = int(req.params.get('T1'))
         except:
                 return func.HttpResponse(
-                        json.dumps({"ERROR_MSG":"T1 failed for age..."}),
+                        json.dumps({"ERROR_MSG":"T1 failed for age... THIS IS A CICD TEST! - ATN & MARIO",
+                                    "ERROR_VAL":req.params.get('T1'),
+                                    "ATN_SAYS_ARF":'hello world!'}),
                         status_code=400)
         try:
+                #T2 = T1 + 10
                 T2 = int(req.params.get('T2'))
         except:
                 return func.HttpResponse(
@@ -51,7 +54,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
                 N_Biop = int(req.params.get('N_Biop'))
         except:
                 return func.HttpResponse(
-                        json.dumps({"ERROR_MSG":"N_Biop failed for number of biops...",
+                        json.dumps({"ERROR_MSG":"N_Biop failed for number of biops... THIS IS A CICD TEST!",
                                     "ERROR_VAL":req.params.get('N_Biop')}),
                         status_code=400)
 
@@ -117,6 +120,8 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         # Add BCRA Functions here
         #check_summary = bcra.check_summary
         absolute_risk = bcra.absolute_risk
+        #error_check = bcra.error_check
+        #relative_risk = bcra.relative_risk
 
         # Convert to R dataframe
         pandas2ri.activate()
