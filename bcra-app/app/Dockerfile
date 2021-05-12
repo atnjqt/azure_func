@@ -14,7 +14,7 @@ RUN pip3 install flask pandas rpy2
 # R DEPENDENCIES
 RUN Rscript -e "install.packages('BCRA')"
 
-COPY . /app
+COPY ./app.py /app
 EXPOSE 5000
 
 #CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
